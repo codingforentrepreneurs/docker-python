@@ -36,3 +36,10 @@ jobs:
           push: true
           context: ./3.9/webapp/chromedriver/
           tags: codingforentrepreneurs/python:3.9-webapp-chromedriver
+      - name: Build and push Python 3.9 Webapp with Chromedriver & Selenium
+        id: docker_build_selenium
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          context: ./3.9/webapp/selenium/
+          tags: codingforentrepreneurs/python:3.9-webapp-selenium
