@@ -7,3 +7,6 @@ RUN apt-get update && \
     python3-setuptools \
     gcc \
     make
+
+RUN apt-get autoremove -y \
+    && rm -rf /var/lib/apt/lists/*
