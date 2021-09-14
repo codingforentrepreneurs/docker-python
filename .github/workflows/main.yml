@@ -22,10 +22,17 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push
-        id: docker_build
+      - name: Build and Push Python 3.9 Webapp Slim
+        id: docker_build_slim
         uses: docker/build-push-action@v2
         with:
           push: true
           context: ./3.9/webapp/slim/
           tags: codingforentrepreneurs/python:3.9-webapp-slim
+      - name: Build and push Python 3.9 Webapp with Chromedriver
+        id: docker_build_chromedriver
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          context: ./3.9/webapp/chromedriver/
+          tags: codingforentrepreneurs/python:3.9-webapp-chromedriver
