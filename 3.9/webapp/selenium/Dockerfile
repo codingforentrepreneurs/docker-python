@@ -12,7 +12,7 @@ RUN apt-get update && \
     gcc \
     make
 
-RUN python -m pip install selenium -y
+RUN python -m pip install selenium
 
 # Create a virtual environment in /opt
 RUN python3 -m venv /opt/venv && /opt/venv/bin/python -m pip install selenium
