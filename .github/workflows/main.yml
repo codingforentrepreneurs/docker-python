@@ -25,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          context: ./3.9/webapp/slim/Dockerfile
+          context: ./3.9/webapp/slim/
           tags: codingforentrepreneurs/python:3.9-webapp-slim
