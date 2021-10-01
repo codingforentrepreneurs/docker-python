@@ -50,3 +50,10 @@ jobs:
           push: true
           context: ./3.9/webapp/cassandra-selenium/
           tags: codingforentrepreneurs/python:3.9-webapp-cassandra-selenium
+      - name: Build & Push Python 3.9 Webapp with Jupyter & Tensorflow
+        id: docker_build_jupyter_tensorflow
+        uses: docker/build-push-action@v2
+        with:
+           push: true
+           context: ./3.9/webapp/jupyter-tensorflow/
+           tags: codingforentrepreneurs/python:3.9-jupyter-tensorflow
