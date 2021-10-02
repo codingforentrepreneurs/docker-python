@@ -27,3 +27,15 @@ FROM codingforentrepreneurs/python:3.9-webapp-chromedriver
 ```Dockerfile
 FROM codingforentrepreneurs/python:3.9-webapp-slim
 ```
+
+### Python 3.9 Webapp with Cassandra Driver
+
+```Dockerfile
+FROM codingforentrepreneurs/python:3.9-webapp-cassandra
+```
+
+### Python 3.9 Webapp with Cassandra Driver & Selenium
+
+```Dockerfile
+FROM codingforentrepreneurs/python:3.9-webapp-cassandra-selenium
+```
